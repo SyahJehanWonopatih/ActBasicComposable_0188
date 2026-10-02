@@ -39,7 +39,7 @@ fun TugasBox(modifier: Modifier = Modifier) {
     }
 }
 
-Composable
+@Composable
 fun TugasRowDalamColumn(modifier: Modifier = Modifier) {
     Column {
         Row(
@@ -59,3 +59,23 @@ fun TugasRowDalamColumn(modifier: Modifier = Modifier) {
             Text(text = "Komponen 3 Baris 2")
         }
     }
+}
+
+@Composable
+fun TugasRowColumn(modifier: Modifier = Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Column {
+            Text(text = "Komponen 1 Kolom 1")
+            Text(text = "Komponen 2 Kolom 1")
+            Text(text = "Komponen 3 Kolom 1")
+        }
+        Column {
+            Text(text = "Komponen 1 Kolom 2")
+            Text(text = "Komponen 2 Kolom 2")
+            Text(text = "Komponen 3 Kolom 2")
+        }
+    }
+}
