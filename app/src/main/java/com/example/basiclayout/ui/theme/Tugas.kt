@@ -24,3 +24,17 @@ fun TugasRow(modifier: Modifier = Modifier) {
         Text(text = "Komponen 4")
     }
 }
+
+@Composable
+fun TugasBox(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+            .fillMaxHeight()
+            .fillMaxWidth(),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = "Box 1")
+        Text(text = "Column 1")
+        Text(text = "Row 1")
+    }
+}
