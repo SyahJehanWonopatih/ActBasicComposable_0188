@@ -25,6 +25,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basiclayout.R
 
+val BiruTerang = Color(0xFF00A2E8)
+val MerahTerang = Color(0xFFED1C24)
+val UnguMuda = Color(0xFFC8BFE7)
+
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
     Box(modifier = Modifier.fillMaxSize()) {
@@ -50,7 +54,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             Text(
                 text = "Ini adalah halaman login,",
                 fontSize = 16.sp,
-                color = Color.White
+                color = Color.Red
             )
             Spacer(modifier = Modifier.height(48.dp))
             Image(
@@ -96,7 +100,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun TugasLoginPreview() {
-    BasicLayouTheme {
+    BasicLayoutTheme {
         TugasLogin()
     }
 }
