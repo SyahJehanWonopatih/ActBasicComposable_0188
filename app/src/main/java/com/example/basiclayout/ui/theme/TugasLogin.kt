@@ -57,7 +57,26 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 color = Color.White
             )
+            Spacer(modifier = Modifier.height(12.dp))
+            Image(
+                painter = painterResource(id = R.drawable.foto_pengangguran),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .size(350.dp)
+                    .clip(CircleShape)
+                    .background(UnguMuda)
+                    .border(width = 4.dp, color = Color.White, shape = CircleShape)
+            )
         }
 
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun TugasLoginPreview() {
+    MyLayoutTheme {
+        TugasLogin()
     }
 }
