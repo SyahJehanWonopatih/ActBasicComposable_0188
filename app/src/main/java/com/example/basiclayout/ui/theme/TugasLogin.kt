@@ -14,5 +14,26 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
         )
+
+        Column(
+            modifier = modifier
+                .fillMaxSize()
+                .padding(top = 16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Login",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = BiruTerang
+            )
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 16.sp,
+                color = Color.White
+            )
+
+        }
+
     }
 }
