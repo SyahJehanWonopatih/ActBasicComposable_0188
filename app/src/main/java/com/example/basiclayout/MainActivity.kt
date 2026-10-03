@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BasicLayoutTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TugasBoxColumnRow(
+                    TugasLogin(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
